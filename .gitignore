@@ -1,0 +1,7 @@
+# 运行产物，不进仓库
+tools/watchdog.log
+tools/watchdog.state.json
+__pycache__/
+*.pyc
+*.bak-*
+.venv/
