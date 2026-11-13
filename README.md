@@ -35,7 +35,7 @@ DSH  →  Magpie（路由）  →  本地网关 :8788  →  WorkBuddy 国内账�
 ```
 1. 装 Python 依赖         pip install segno
 2. 装 Magpie              → 按 01 文档
-3. 装 WorkBuddy2API 网关  → 按 01 文档（**提示词一个字都别改**）
+3. 装 WorkBuddy2API 网关  → 按 01 文档，打完 11-128 补丁并验证
 4. 启动网关，扫码加你自己的账号
 5. 配 Magpie + DSH        → 按 01 文档
 6. 跑起来验证
@@ -54,9 +54,10 @@ README.md                      ← 你正在看的
 03_常见问题.md                  ← 429 / 积分 / 额度 / 报错
 
 patches\
+  patch_11-128.py              ← 【必须打】让国内上游不拦 DSH 的提示词
   patch_force_max.py           ← 【可选】强制最高思考档位
-  check_sanitize.py            ← 检查工具有没有装好
-  README.md                    ← 为什么这里没有 11-128 补丁（重要）
+  check_sanitize.py            ← 验证补丁真的生效（建议打完就跑一次）
+  README.md                    ← 坑：判断条件必须匹配原文
 
 tools\
   batch_add.py                 ← 批量生成扫码链接，多人帮忙加账号
